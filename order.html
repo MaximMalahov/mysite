@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="style/main.css">
 
     <title>Компания "Рога и копыта"</title>
-    <style>
-        li {
-         list-style: none; /* Скрываем маркеры списка */
-         text-indent: -1em; /* Сдвигаем элементы списка влево */
-        }
-        li::before {
-         content: '\25ba'; /* Добавляем маркер в шестнадцатеричном формате*/
-         padding-right: 5px; /* Расстояние от маркеров до текста */
-         color: red; /* Маркеры красного цвета */
-        }
-       </style>
+    
+       <style type="text/css"> 
+    #rightcol {
+     position: absolute; /* Абсолютное позиционирование */
+     left: 350px; /* Положение левого края */
+     top: 50px; /* Положение верхнего края */
+     width: 120px; /* Ширина слоя */
+     background: #e0e0e0; /* Цвет фона */
+     border: solid 1px #000; /* Параметры рамки */
+    }
+    #leftcol {
+     position: absolute; /* Абсолютное позиционирование */
+     left: 0; /* Положение левого края */
+     top: 0; /* Положение верхнего края */
+     width: 400px; /* Ширина слоя */
+     background: #800000; /* Цвет фона */
+     color: white; /* Цвет текста */
+    }
+   </style>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+   
 </head>
 <body>
     <div class="wrapper">
@@ -29,26 +39,27 @@
         <!-- /.header -->
         <div class="menu">
             <ul>
-                <li><a href="/index.html" class="menu-link">Главная</a></li>
-                <li><a href="/about.html" class="menu-link">О компании</a></li>
-                <li><a href="/employee.html" class="menu-link">Наши сотрудники</a></li>
-                <li><a href="/order.html" class="menu-link">Заказать</a></li>
-                <li><a href="/gallery.html" class="menu-link">Галлерея</a></li>
-                <li><a href="/education.html" class="menu-link">Обучение</a></li>
-                <li><a href="https://мвд.рф/" target="_blank" class="menu-link">Мы чтим уголовный кодекс</a></li>
+            <li><a href="index.html" class="menu-link">Главная</a></li>
+            <li><a href="about.html" class="menu-link">О компании</a></li>
+            <li><a href="employee.html" class="menu-link">Наши сотрудники</a></li>
+            <li><a href="order.html" class="menu-link">Заказать</a></li>
+            <li><a href="gallery.html" class="menu-link">Галерея</a></li>
+            <li><a href="education.html" class="menu-link">Обучение</a></li>
+            <li><a href="fonts.html" class="menu-link">Шрифты</a></li>
+            <li><a href="https://мвд.рф/" target="_blank" class="menu-link">Мы чтим уголовный кодекс</a></li>
             </ul>
-        </div>
-        <!-- /.menu -->
-        <div class="content-col">
+            </div>
+            <!— /.menu —>
+            <div class="content-col">
             <div class="vertical-menu">
-                <ul>
-                    <li><a href="/index.html" class="menu-link">Главная</a></li>
-                    <li><a href="/about.html" class="menu-link">О компании</a></li>
-                    <li><a href="/employee.html" class="menu-link">Наши сотрудники</a></li>
-                    <li><a href="/order.html" class="menu-link">Заказать</a></li>
-                    <li><a href="/gallery.html" class="menu-link">Галлерея</a></li>
-                    <li><a href="/education.html" class="menu-link">Обучение</a></li>
-                </ul>
+            <ul>
+            <li><a href="index.html" class="menu-link">Главная</a></li>
+            <li><a href="about.html" class="menu-link">О компании</a></li>
+            <li><a href="employee.html" class="menu-link">Наши сотрудники</a></li>
+            <li><a href="order.html" class="menu-link">Заказать</a></li>
+            <li><a href="gallery.html" class="menu-link">Галерея</a></li>
+            <li><a href="education.html" class="menu-link">Обучение</a></li>
+            </ul>
             </div>
             <!-- /.vertical-menu -->
             <div class="content">
@@ -65,7 +76,7 @@
                     <p><label>Email    <input type="email" name="email" placeholder="petrovich@mail.ru"></label></p>
                     <p><label>Телефон  <input type="text" name="phone" placeholder="+7 (999)000-00-00"></label></p>
                     <p><label>Пароль   <input type="password" name="password" placeholder="********"></label></p>
-                    <p><label>Подтвердите пароль   <input type="password" name="confrimPassword" placeholder="********"></label></p>
+                    <p><label>Подтвердите пароль  <input type="password" name="confrimPassword" placeholder="********"></label></p>
                     <p><label>Федеральный округ
                         <select name="federalDistrict">
                             <option value="1" selected>Центральный</option>
