@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="style/main.css">
-
-<title>Компания "Рога и копыта"</title>
+    <link rel="shortcut icon" href="/img/strike.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Компания "Рога и копыта"</title>
+    <style>
+        a {
+    color: #14ffe0; /* Цвет обычной ссылки */
+    padding: 2px; /* Поля вокруг текста */
+    }
+    a:visited {
+    color: #19f0ff; /* Цвет посещенной ссылки */
+    }
+    a:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */
+    background: #0edf99; /* Цвет фона */
+    }
+        .topNubex {
+	position: fixed;
+	right: 45px;
+    bottom: 45px;
+    background: #b5bdc8;
+    background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 20px; /* Радиус скругления */
+   }
+       </style>
 </head>
 <body>
-<div class="wrapper">
-<header>
-<h1>Компания "Рога и копыта"</h1>
-<h2>Мы работаем для вас</h2>
-</header>
-<!— /.header —>
-<div class="menu">
-    <ul>
-    <li><a href="index.html" class="menu-link">Главная</a></li>
-    <li><a href="about.html" class="menu-link">О компании</a></li>
-    <li><a href="employee.html" class="menu-link">Наши сотрудники</a></li>
-    <li><a href="order.html" class="menu-link">Заказать</a></li>
-    <li><a href="gallery.html" class="menu-link">Галерея</a></li>
-    <li><a href="education.html" class="menu-link">Обучение</a></li>
-    <li><a href="fonts.html" class="menu-link">Шрифты</a></li>
-    <li><a href="https://мвд.рф/" target="_blank" class="menu-link">Мы чтим уголовный кодекс</a></li>
-    </ul>
+    <div id="container">
+        <div id="header">
+            <h1>Техническое обслуживание станков</h1>
+            <h2>У Рустамчика</h2>  
+         </div>
+        <div id="nav">
+         <p><a href="index.html">Главная</a></p>
+         <p><a href="employee.html">Сотрудники</a></p>
+         <p><a href="about.html">О нас</a></p>
+        </div>
+<div id="content">
+<div id="unit">
+
+<div class="unit">1</div>
+<div class="unit">Рустамчик</div>
+<div class="unit">Владелец</div>
+<div class="unit"><p><img width="150" height="160" src="img/1.jpg"></p></div>
+
+<div class="unit">2</div>
+<div class="unit">Малахов М. С.</div>
+<div class="unit">Директор</div>
+<div class="unit"><p><img width="150" height="160" src="img/Директор.jpg"></p></div>
+
+<div class="unit">3</div>
+<div class="unit">Ульянин Р.Е.</div>
+<div class="unit">Менеджер по продажам</div>
+<div class="unit"><p><img width="150" height="160" src="img/менеджер по продажам.jpg"></p></div>
+
+<div class="unit">4</div>
+<div class="unit">Зайцев А.С. и Смирнов В.А.</div>
+<div class="unit">Механики</div>
+<div class="unit"><p><img width="150" height="160" src="img/механики.jpg"></p></div>
+
+
+
+
     </div>
-    <!— /.menu —>
-    <div class="content-col">
-    <div class="vertical-menu">
-    <ul>
-    <li><a href="index.html" class="menu-link">Главная</a></li>
-    <li><a href="about.html" class="menu-link">О компании</a></li>
-    <li><a href="employee.html" class="menu-link">Наши сотрудники</a></li>
-    <li><a href="order.html" class="menu-link">Заказать</a></li>
-    <li><a href="gallery.html" class="menu-link">Галерея</a></li>
-    <li><a href="education.html" class="menu-link">Обучение</a></li>
-    </ul>
+    <div id="aside">
+        <h3></h3>
+        <p></p>
+        <p></p>
+        <p></p>
+       </div> 
+       
     </div>
-    <!— /.vertical-menu —>
-    <div class="content">
-    <table border="1px" style="border-spacing: 0px">
-    <th>№</th>
-    <th>ФИО</th>
-    <th>Должность</th>
-    <th>Фото</th>
-    <tr>
-    <td>1</td>
-    <td>Бендер О.И.</td>
-    <td>Директор</td>
-    <td><img src="img/bender.jpeg" alt=""></td>
-    </tr>
-    <tr>
-    <td>2</td>
-    <td>Паниковский М.С.</td>
-    <td>Зам. директора по связям с общественностью</td>
-    <td><img src="img/panikovskiy.jpg" alt=""></td>
-    </tr>
-    <tr>
-    <td>3</td>
-    <td>Балаганов А.В.</td>
-    <td>Курьер</td>
-    <td><img src="img/balaganov.jpg" alt=""></td>
-    </tr>
-    <tr>
-    <td>4</td>
-    <td>Козлевич А.Д.</td>
-    <td>Водитель</td>
-    <td><img src="img/kozlevich.jpg" alt=""></td>
-    </tr>
-    </table>
-<footer>
-<a href="#" class="btn-up" title="Наверх">^<br>|</a>
-<i>&copy; Бендер и компания</i>
-</footer>
-</div>
-</body>
-</html>
+    <div id="footer">
+        <a href="#" title="Вернуться к началу страницы" class="topNubex">Нажми на меня</a>
+           &copy; Рустамчик.rus</div>
+      </div>
+   </body>
+  </html>

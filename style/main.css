@@ -1,211 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+h1 ,h2, h3 {font-family: 'Lobster', cursive;}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   }
-  body{background-color: #ec5ab0;}
-  h1{
-  color: rgb(214, 16, 16);
-  font-size: 25px;
-  font-weight: medium;
-  }
-  h2{
-  color: rgb(63, 0, 211);
-  font-size: 20px;
-  font-weight: 500;
-  }
-  h3{
-    color: rgb(10, 0, 32);
-    font-size: 20px;
-    font-weight: 500;
+ 
+  body {
+    font: 0.8em Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+    background: url(../img/original.jpg);
+    color: #ffe; /* Цвет текста */
+   }
+   a { color: #008BCE; /* Цвет ссылок */ }
+   #container {
+    width: 1200px; /* Ширина макета */
+    margin: 0 auto; /* Выравниваем по центру */
+    background: linear-gradient(#449a6f, #4e3094) fixed;
+   }
+   #header { 
+    font-size: 2.2em; /* Размер текста */
+    text-align: center; /* Выравнивание по центру */
+    padding: 50px; /* Отступы вокруг текста */
+    background: url(../img/unnamed.jpg);
+   }
+   #nav, #aside {
+    float: left; width: 100px; padding: 5px;
+    
+   }
+   #content {
+    background: #54B948;
+    margin: 0 120px; /* Ширина колонок */
+    padding: 10px;
+    
+   }
+   #aside {
+    float: right; color: #000;
+   }
+   h2 { margin: 0 0 1em; }
+   #footer { 
+    clear: both; /* Отменяем действие float */
+    padding: 5px; /* Отступы вокруг текста */
+    background: url(../img/unnamed.jpg);
+   }
+   @media (min-width:700px){
+    #unit {
+    position: none;
+    padding:10px;
+    color: #000; /* синий цвет текста */
+    font-size:15pt; /* Размер шрифта в пикселах*/
     }
-  p{
-  color: #000000;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: oblique;
-  font-size: 14px;
-  }
-  img{border: 3px dotted rgb(0, 255, 106);}
-  
-  .menu ul{
-  display: flex;
-  width: 100%;
-  list-style: none;
-  font-family: 'Courier New', Courier, monospace;
-  }
-  .menu a{
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
-  }
-  
-  table td.content table td:nth-child(4) img{
-  width: 160px;
-  box-sizing: border-box;
-  object-fit: contain;
-  background-color: rgb(255, 255, 255);
-  }
-  
-  .about ul>li:nth-child(1){font-variant: small-caps;}
-  .about ol>li{font-variant: normal;}
-  .about ol>li:nth-child(1){font-weight: 100;}
-  .about ol>li:nth-child(2){font-weight: 300;}
-  .about ol>li:nth-child(3){font-size: 15px;}
-  .about ol>li:nth-child(4){font-size: 20px;}
-  .about ol>li:nth-child(5){color: #8fe5b0}
-  .about ul>li:nth-child(2){color: rgb(252, 252, 252)}
-  .about ul>li:nth-child(3){font: italic normal 700 15px "Roboto"}
-  
-  .wrapper{
-  width: 1000px;
-  margin: 0 auto;
-  }
-  header{
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
-  a{
-  font-size: 14px;
-  font-family:
-  'Lucida Sans',
-  'Lucida Sans Regular',
-  'Lucida Grande',
-  'Lucida Sans Unicode',sss
-  Geneva, Verdana, sans-serif;
-  color: rgb(14, 247, 208);
-  text-decoration: underline;
-  }
-  a:hover{
-  color: rgb(90, 216, 107);
-  text-decoration: none;
-  }
-  .menu{
-  height: 50px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  .menu-link, .menu-link:visited{
-  color: rgb(230, 208, 208);
-  text-decoration: none;
-  transition: color .3s ease-out;
-  }
-  .vertical-menu a.menu-link{
-  color: rgb(252, 246, 246)
-  }
-  .vertical-menu a.menu-link:hover,
-  .menu-link:hover{
-  color: rgb(252, 252, 252);
-  }
-  .vertical-menu{
-  display: flex;
-  flex-direction: column;
-  background-color:  rgb(50, 148, 5);
-  width: 120px;
-  }
-  .content-col{
-  display: flex;
-  }
-  .menu{
-  background-color: rgb(31, 5, 148);
-  }
-  footer{
-  height: 100px;
-  background-color: rgb(238, 186, 17);
-  justify-content: center;
-  align-items: center;
-  }
-  
-
-  form{
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  }
-  label{
-  margin-bottom: 5px;
-  }
-  input{
-  margin-left: 5px;
-  }
-  .labelOrder{
-  display: flex;
-  flex-direction: column;
-  }
-  input[type=number]{
-  width: 32px;
-  }
-  .calculation{
-  display: flex;
-  width: 280px;
-  justify-content: space-between;
-  }
-  input[type=checkbox]{
-  margin-right: 5px;
-  margin-left: 0;
-  }
-  input[type=submit]{
-  margin-left: 0;
-  }
-  input[type=password]:focus,
-  input[type=number]:focus,
-  input[type=email]:focus,
-  input[type=text]:focus,
-  select:focus
-  {
-  outline: 1px solid rgb(9, 211, 110);
-  outline-offset: -1px;
-  }
-  
-  .content table{
-  border: 1px solid rgb(3, 13, 151);
-  border-spacing: 0;
-  }
-  .content table td{
-  border: 1px solid rgb(32, 10, 158);
-  word-break: break-word;
-  font-size: 12px;
-  }
-  .content table tr:nth-child(1) td:nth-child(1){
-  width: 25px;
-  }
-  .content table tr:nth-child(1) td:nth-child(2){
-  width: 200px;
-  }
-  .content table tr:nth-child(1) td:nth-child(3){
-  width: 100px;
-  }
-  .content table tr:nth-child(2) td:nth-child(1){
-  width: 55px;
-  }
-  .content table tr:nth-child(1),
-  .content table tr:nth-child(2),
-  .content table tr:nth-child(3),
-  .content table tr:nth-child(4){
-  font-weight: 700;
-  text-align: center;
-  vertical-align: top;
-  }
-  .content table tr:nth-last-child(1) td:nth-child(1){
-  text-align: right;
-  font-weight: 700;
-  }
-  .education{
-    color: #002b1252;
-    font-family: 'Comic Sans', Times, serif;
-    font-style: oblique;
-    font-size: 20px;
-    font-weight: bold;  
-}  
-.content {
-  color: #00000052;
-  font-family: 'Verdana', Times, serif;
-  font-style: normal;
-  font-size: 22px;
-  font-weight: bold; 
-}
+    }
+    @media (max-width:699px){
+    #unit {
+    position:none;
+    max-height:100%;
+    max-width:98%;
+    padding:10px;
+    color: #000; /* синий цвет текста */
+    font-size:15pt; /* Размер шрифта в пикселах*/
+    }
+    }
+    #unit img:hover {
+    left:500px;
+    color: #000; /* синий цвет текста */
+    font-size:15pt; /* Размер шрифта в пикселах*/
+    background:#fc0fc0;
+    }
+    .unit img{
+    border-radius: 9px;
+    box-shadow: 0px 5px 5px rgb(61, 65, 63);
+    }
+    #leftcol {
+      padding-right: 10px; /* Поле справа от текста */
+      vertical-align: top; /* Выравнивание по верхнему краю ячеек */
+      width: 200px; /* Ширина колонки */ 
+     }
+     #nav ul {
+         margin: 0px;
+         padding: 0px;
+         list-style:none;
+         width:100px;     
+      }
+      nav  ul li {
+      
+          position: none;
+      
+          border-bottom:1px solid #ccc;
+      
+        }
+        #nav li ul {
+          
+            position: flex;
+          
+            left: 200px;
+          
+            top: 0;
+          
+            display: none;
+          
+          }
+          #nav ul li a {
+            
+              display: block;
+          
+              text-decoration: none;
+            
+              color: rgb(63, 231, 217);
+            
+              background: linear-gradient(#449a6f, #4e3094) fixed;
+            
+              padding: 5px;
+            
+            }
+            #nav  li:hover ul { display: block; }
+            #nav li:hover  a {
+              
+                color:#FFFFFF;
+              
+                background:  url(img/fone-tr.png);
+              
+              }
+              #nav  li:hover ul a:hover {
+                
+                  background-color:#cccccc;
+                
+                  background-image:none;
+                
+                  color:#FFFFFF;
+                
+                }
+                table {
+                  background: #ffffff; /* Цвет фона таблицы */
+                  border: 5px double #8affbd;
+                  }
+                  
+                   th{
+                  font-family: Calibri;
+                  background: maroon; /* Цвет фона таблицы */
+                  color: #ffffff; /* Цвет текста */
+                  text-align: center; /* Выравнивание по centry */
+                  font-style: italic;
+                  font-size: 13pt;
+                  font-weight: bold;
+                  }
+                  
+                   td{
+                  font-family: Calibri;
+                  font-style: normal;
+                  font-size: 12pt;
+                  color:#3366FF;
+                  padding: 10px; /* Поля вокруг текста */
+                  background: #ffffff; /* Цвет фона ячеек */
+                  border: 5px outset #8affbd;
+                  }
+                  
+                   td{
+                  font-family: arial;
+                  font-style: normal;
+                  font-size: 12pt;
+                  color:black;
+                  font-weight: bold;
+                  }
+                  
+                   td:hover{
+                  visibility: hidden;
+                  }
+                  
+                   th:hover{
+                  visibility: hidden;
+                  }
+                  .lightrope {
+                    text-align: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    position: -1px;
+                    z-index: -1;
+                    margin: -15px 0 0 0;
+                    padding: 12;
+                    pointer-events: none;
+                    width: 100%;
+                  }
+                  
+                  .lightrope li {
+                    position: relative;
+                    -webkit-animation-fill-mode: both;
+                    animation-fill-mode: both;
+                    -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: block;
+                    width: 12px;
+                    height: 28px;
+                    border-radius: 50%;
+                    margin: 20px;
+                    display: inline-block;
+                    background: #00f7a5;
+                    box-shadow: 0px 4.66667px 24px 3px #00f7a5;
+                    -webkit-animation-name: flash-1;
+                    animation-name: flash-1;
+                    -webkit-animation-duration: 2s;
+                    animation-duration: 2s;
+                  }
+                  
+                  .lightrope li:nth-child(2n+1) {
+                    background: cyan;
+                    box-shadow: 0px 4.66667px 24px 3px rgba(0, 255, 255, 0.5);
+                    -webkit-animation-name: flash-2;
+                    animation-name: flash-2;
+                    -webkit-animation-duration: 0.4s;
+                    animation-duration: 0.4s;
+                  }
+                  
+                  .lightrope li:nth-child(4n+2) {
+                    background: #f70094;
+                    box-shadow: 0px 4.66667px 24px 3px #f70094;
+                    -webkit-animation-name: flash-3;
+                    animation-name: flash-3;
+                    -webkit-animation-duration: 1.1s;
+                    animation-duration: 1.1s;
+                  }
+                  
+                  .lightrope li:nth-child(odd) {
+                    -webkit-animation-duration: 1.8s;
+                    animation-duration: 1.8s;
+                  }
+                  
+                  .lightrope li:nth-child(3n+1) {
+                    -webkit-animation-duration: 1.4s;
+                    animation-duration: 1.4s;
+                  }
+                  
+                  .lightrope li:before {
+                    content: "";
+                    position: absolute;
+                    background: #222;
+                    width: 10px;
+                    height: 9.33333px;
+                    border-radius: 3px;
+                    top: -4.66667px;
+                    left: 1px;
+                  }
+                  
+                  .lightrope li:after {
+                    content: "";
+                    top: -14px;
+                    left: 9px;
+                    position: absolute;
+                    width: 52px;
+                    height: 18.66667px;
+                    border-bottom: solid #222 2px;
+                    border-radius: 50%;
+                  }
+                  
+                  .lightrope li:last-child:after {
+                    content: none;
+                  }
+                  
+                  .lightrope li:first-child {
+                    margin-left: -40px;
+                  }
+                  
+                  @-webkit-keyframes flash-1 {
+                    0%, 100% {
+                      background: #00f7a5;
+                      box-shadow: 0px 4.66667px 24px 3px #00f7a5;
+                    }
+                    50% {
+                      background: rgba(0, 247, 165, 0.4);
+                      box-shadow: 0px 4.66667px 24px 3px rgba(0, 247, 165, 0.2);
+                    }
+                  }
+                  
+                  @keyframes flash-1 {
+                    0%, 100% {
+                      background: #00f7a5;
+                      box-shadow: 0px 4.66667px 24px 3px #00f7a5;
+                    }
+                    50% {
+                      background: rgba(0, 247, 165, 0.4);
+                      box-shadow: 0px 4.66667px 24px 3px rgba(0, 247, 165, 0.2);
+                    }
+                  }
+                  
+                  @-webkit-keyframes flash-2 {
+                    0%, 100% {
+                      background: cyan;
+                      box-shadow: 0px 4.66667px 24px 3px cyan;
+                    }
+                    50% {
+                      background: rgba(0, 255, 255, 0.4);
+                      box-shadow: 0px 4.66667px 24px 3px rgba(0, 255, 255, 0.2);
+                    }
+                  }
+                  
+                  @keyframes flash-2 {
+                    0%, 100% {
+                      background: cyan;
+                      box-shadow: 0px 4.66667px 24px 3px cyan;
+                    }
+                    50% {
+                      background: rgba(0, 255, 255, 0.4);
+                      box-shadow: 0px 4.66667px 24px 3px rgba(0, 255, 255, 0.2);
+                    }
+                  }
+                  
+                  @-webkit-keyframes flash-3 {
+                    0%, 100% {
+                      background: #f70094;
+                      box-shadow: 0px 4.66667px 24px 3px #f70094;
+                    }
+                    50% {
+                      background: rgba(247, 0, 148, 0.4);
+                      box-shadow: 0px 4.66667px 24px 3px rgba(247, 0, 148, 0.2);
+                    }
+                  }
+                  
+                  @keyframes flash-3 {
+                    0%, 100% {
+                      background: #f70094;
+                      box-shadow: 0px 4.66667px 24px 3px #f70094;
+                    }
+                    50% {
+                      background: rgba(247, 0, 148, 0.4);
+                      box-shadow: 0px 4.66667px 24px 3px rgba(247, 0, 148, 0.2);
+                    }
+                  }
+                
+     
+    

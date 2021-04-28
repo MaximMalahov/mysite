@@ -1,108 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="shortcut icon" href="/img/strike.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style/main.css">
-
     <title>Компания "Рога и копыта"</title>
-    
-       <style type="text/css"> 
-    #rightcol {
-     position: absolute; /* Абсолютное позиционирование */
-     left: 350px; /* Положение левого края */
-     top: 50px; /* Положение верхнего края */
-     width: 120px; /* Ширина слоя */
-     background: #e0e0e0; /* Цвет фона */
-     border: solid 1px #000; /* Параметры рамки */
+    <style>
+        a {
+    color: #14ffe0; /* Цвет обычной ссылки */
+    padding: 2px; /* Поля вокруг текста */
     }
-    #leftcol {
-     position: absolute; /* Абсолютное позиционирование */
-     left: 0; /* Положение левого края */
-     top: 0; /* Положение верхнего края */
-     width: 400px; /* Ширина слоя */
-     background: #800000; /* Цвет фона */
-     color: white; /* Цвет текста */
+    a:visited {
+    color: #19f0ff; /* Цвет посещенной ссылки */
     }
-   </style>
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    a:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */
+    background: #0edf99; /* Цвет фона */
+    }
+        .topNubex {
+	position: fixed;
+	right: 45px;
+    bottom: 45px;
+    background: #b5bdc8;
+    background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 20px; /* Радиус скругления */
+   }
+  
 
-   
+  
+       </style>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Компания "Рога и копыта"</h1>
-            <h2>Мы работаем для вас</h2>
-        </header>
-        <!-- /.header -->
-        <div class="menu">
-            <ul>
-            <li><a href="index.html" class="menu-link">Главная</a></li>
-            <li><a href="about.html" class="menu-link">О компании</a></li>
-            <li><a href="employee.html" class="menu-link">Наши сотрудники</a></li>
-            <li><a href="order.html" class="menu-link">Заказать</a></li>
-            <li><a href="gallery.html" class="menu-link">Галерея</a></li>
-            <li><a href="education.html" class="menu-link">Обучение</a></li>
-            <li><a href="fonts.html" class="menu-link">Шрифты</a></li>
-            <li><a href="https://мвд.рф/" target="_blank" class="menu-link">Мы чтим уголовный кодекс</a></li>
-            </ul>
-            </div>
-            <!— /.menu —>
-            <div class="content-col">
-            <div class="vertical-menu">
-            <ul>
-            <li><a href="index.html" class="menu-link">Главная</a></li>
-            <li><a href="about.html" class="menu-link">О компании</a></li>
-            <li><a href="employee.html" class="menu-link">Наши сотрудники</a></li>
-            <li><a href="order.html" class="menu-link">Заказать</a></li>
-            <li><a href="gallery.html" class="menu-link">Галерея</a></li>
-            <li><a href="education.html" class="menu-link">Обучение</a></li>
-            </ul>
-            </div>
+    <div id="container">
+        <div id="header">
+            <h1>Техническое обслуживание станков</h1>
+            <h2>У Рустамчика</h2>  
+         </div>
+        <div id="nav">
+         <p><a href="index.html">Главная</a></p>
+         <p><a href="employee.html">Сотрудники</a></p>
+         <p><a href="about.html">О нас</a></p>
+        </div>
             <!-- /.vertical-menu -->
-            <div class="content">
-                <h3>Заказать</h3>
-                <form action="" method="POST">
-                    <label class="calculation">
-                        <label>Наличный расчёт<input type="radio" name="calculation"></label>
-                        <labe1>Безналичный расчёт<input type="radio" name="calculation"></labe1>
-                    </label>
-                   
-                    <p><label>Фамилия  <input type="text" name="surname" placeholder="Петров"></label></p>
-                    <p><label>Имя      <input type="text" name="name" placeholder="Пётр"></label></p>
-                    <p><label>Отчество <input type="text" name="middleName" placeholder="Петрович"></label></p>
-                    <p><label>Email    <input type="email" name="email" placeholder="petrovich@mail.ru"></label></p>
-                    <p><label>Телефон  <input type="text" name="phone" placeholder="+7 (999)000-00-00"></label></p>
-                    <p><label>Пароль   <input type="password" name="password" placeholder="********"></label></p>
-                    <p><label>Подтвердите пароль  <input type="password" name="confrimPassword" placeholder="********"></label></p>
-                    <p><label>Федеральный округ
-                        <select name="federalDistrict">
-                            <option value="1" selected>Центральный</option>
-                            <option value="2">Северо-западный</option>
-                            <option value="3">Южный</option>
-                            <option value="4">Северо-Кавказкий</option>
-                            <option value="5">Приволжский</option>
-                            <option value="6">Уральский</option>
-                        </select>
-                    </label></p>
-                    <p><label class="labelOrder"></p>
-                        Заказываю
-                        <p><label><input type="checkbox" name="horns">рога в количестве <input type="number" name="hornsCount" value="1"> штук</label></p>
-                        <p><label><input type="checkbox" name="hooves">копыта в количестве <input type="number" name="hoovesCount" value="1"> штук</label></p>
-                    </label>
-                    <label>Пожелания<br><textarea name="wishes" cols="30" rows="4"></textarea></label>
-                    <input type="submit" value="Подтвердить заказ">
-                </form>
-            </td>
-            <!-- /.content -->
-        </tr>
-        <!-- /.content-col -->
-        <footer>
-            <a href="#" class="btn-up" title="Наверх">^<br>|</a>
-            <i>&copy; Бендер и компания</i>
-            </footer>
-            </div>
-            </body>
-            </html>
+            <div id="content">
+<b>Заказать</b>
+<form action="" method="POST">
+<label class="calculation">
+<label>Наличный расчёт<input type="radio" name="calculation"></label>
+<labe1>Безналичный расчёт<input type="radio" name="calculation"></labe1>
+</label>
+
+<p><label>Фамилия <input type="text" name="surname" placeholder="Иванов"></label></p>
+<p><label>Имя <input type="text" name="surname" placeholder="Иван"></label></p>
+<p><label>Отчество<input type="text" name="surname" placeholder="Иванович"></label></p>
+<p><label>Email <input type="email" name="email" placeholder="ivanich@mail.ru"></label></p>
+<p><label>Телефон <input type="text" name="phone" placeholder="+7 (999)000-00-00"></label></p>
+<p><label>Пароль <input type="password" name="password" placeholder="********" >  </label></p>
+<p><label>Подтвердите пароль <input type="password" name="confrimPassword" placeholder="********" ></label></p>
+<p><label>Город
+<select name="federalDistrict">
+<option value="1" selected>Лукоянов</option>
+<option value="2">Москва</option>
+<option value="3">Нижний Новгород</option>
+<option value="4">Санкт-Петербург</option>
+</select>
+</label></p>
+<p><label class="labelOrder"></p>
+Заказываю
+<p><label><input type="checkbox" name="horns">Станок<input type="number" name="hornsCount" value="1"> кол-во</label></p>
+
+</label>
+<label>Пожелания<br><textarea name="wishes" cols="30" rows="4"></textarea></label>
+<input type="submit" value="Подтвердить заказ">
+</form>
+</div>
+
+
+
+
+<div id="aside">
+ <h3></h3>
+ <p></p>
+ <p></p>
+ <p></p>
+</div> 
+
+
+
+<div id="footer">
+    <a href="#" title="Вернуться к началу страницы" class="topNubex">Нажми на меня</a>
+       &copy; Рустамчик.rus</div>
+</div>
+</body>
+</html>
